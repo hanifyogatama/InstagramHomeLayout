@@ -46,17 +46,27 @@ class MainActivity : AppCompatActivity() {
             .circleCrop()
             .into(ivStory7)
 
-        // feed
+         // feed
         Glide.with(this)
             .load(R.drawable.martin_garrix)
             .circleCrop()
             .into(ivFeed1)
 
-        // comment icon
+        Glide.with(this)
+            .load(R.drawable.martin_garrix)
+            .circleCrop()
+            .into(ivFeed2)
+
+         // comment icon
         Glide.with(this)
             .load(R.drawable.oppa)
             .circleCrop()
             .into(ivCommentIcon1)
+
+        Glide.with(this)
+            .load(R.drawable.oppa)
+            .circleCrop()
+            .into(ivCommentIcon2)
 
 
 
