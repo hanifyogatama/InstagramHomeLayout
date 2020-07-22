@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
             .into(ivStory1)
 
         Glide.with(this)
-            .load(R.drawable.jakarta)
+            .load(R.drawable.zara_larsson)
             .circleCrop()
             .into(ivStory2)
 
@@ -27,22 +27,22 @@ class MainActivity : AppCompatActivity() {
             .into(ivStory3)
 
         Glide.with(this)
-            .load(R.drawable.jakarta)
+            .load(R.drawable.justin_beiber)
             .circleCrop()
             .into(ivStory4)
 
         Glide.with(this)
-            .load(R.drawable.jakarta)
+            .load(R.drawable.chelsea)
             .circleCrop()
             .into(ivStory5)
 
         Glide.with(this)
-            .load(R.drawable.jakarta)
+            .load(R.drawable.agent_of_shield)
             .circleCrop()
             .into(ivStory6)
 
         Glide.with(this)
-            .load(R.drawable.jakarta)
+            .load(R.drawable.zedd)
             .circleCrop()
             .into(ivStory7)
 
