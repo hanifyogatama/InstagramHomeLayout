@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
             .into(ivStory2)
 
         Glide.with(this)
-            .load(R.drawable.jakarta)
+            .load(R.drawable.martin_garrix)
             .circleCrop()
             .into(ivStory3)
 
@@ -48,9 +48,16 @@ class MainActivity : AppCompatActivity() {
 
         // feed
         Glide.with(this)
-            .load(R.drawable.oppa)
+            .load(R.drawable.martin_garrix)
             .circleCrop()
             .into(ivFeed1)
+
+        // comment icon
+        Glide.with(this)
+            .load(R.drawable.oppa)
+            .circleCrop()
+            .into(ivCommentIcon1)
+
 
 
     }
