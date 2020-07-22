@@ -71,12 +71,6 @@
 
 
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/gHor4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.93" />
 <!--End Guideline-->
 
 
@@ -308,7 +302,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_begin="190dp" />
+                app:layout_constraintGuide_begin="204dp" />
 
             <View
                 android:id="@+id/vGaris2"
@@ -320,8 +314,8 @@
 
             <ImageView
                 android:id="@+id/ivFeed1"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:layout_marginStart="16dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/martin_garrix"
@@ -488,17 +482,20 @@
                 app:layout_constraintStart_toStartOf="@id/ivCommentIcon1"
                 app:layout_constraintTop_toBottomOf="@id/ivCommentIcon1" />
 
+
+            <!--feed ke 2-->
+
             <ImageView
                 android:id="@+id/ivFeed2"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:layout_marginTop="20dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/agent_of_shield"
                 app:layout_constraintStart_toStartOf="@id/tvHours1"
                 app:layout_constraintTop_toBottomOf="@id/tvHours1" />
 
-<!--            feed ke 2-->
+
 
 <!--            <androidx.constraintlayout.widget.Guideline-->
 <!--                android:id="@+id/gHor13"-->
@@ -536,18 +533,18 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_goneMarginBottom="40dp"
                 android:layout_marginEnd="7dp"
                 android:src="@drawable/ic_baseline_more_vert_24"
                 app:layout_constraintBottom_toTopOf="@id/ivAgentOfShield"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
                 app:layout_constraintStart_toEndOf="@id/tvAgentOfShiled" />
 
             <ImageView
                 android:id="@+id/ivAgentOfShield"
                 android:layout_width="match_parent"
                 android:layout_height="385dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="8dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/feed_martin"
                 app:layout_constraintStart_toStartOf="@id/ivFeed2"
@@ -582,7 +579,7 @@
                 app:layout_constraintBottom_toBottomOf="@id/ivComment2"
                 app:layout_constraintStart_toEndOf="@id/ivComment2" />
 
-            ======
+
 
             <ImageView
                 android:id="@+id/ivMark2"
@@ -673,19 +670,254 @@
                 app:layout_constraintTop_toBottomOf="@id/ivCommentIcon2" />
 
 
+            <!-- feed ke 3-->
+
+            <ImageView
+                android:id="@+id/ivFeed3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/zedd"
+                app:layout_constraintStart_toStartOf="@id/tvHours2"
+                app:layout_constraintTop_toBottomOf="@id/tvHours2" />
+
+            <TextView
+                android:id="@+id/tvZedd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="13dp"
+                android:fontFamily="sans-serif-light"
+                android:text="zedd"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/ivFeed3"
+                app:layout_constraintStart_toEndOf="@id/ivFeed3"
+                app:layout_constraintTop_toTopOf="@id/ivFeed3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Berlin, Germany"
+                android:textColor="#000"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@id/tvZedd"
+                app:layout_constraintTop_toBottomOf="@id/tvZedd" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="7dp"
+                android:src="@drawable/ic_baseline_more_vert_24"
+                app:layout_constraintBottom_toTopOf="@id/ivZedd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvZedd" />
+
+            <ImageView
+                android:id="@+id/ivZedd"
+                android:layout_width="match_parent"
+                android:layout_height="385dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/feed_martin"
+                app:layout_constraintStart_toStartOf="@id/ivFeed3"
+                app:layout_constraintTop_toBottomOf="@id/ivFeed3" />
+
+            <ImageView
+                android:id="@+id/ivLove3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_love"
+                app:layout_constraintStart_toStartOf="@id/ivFeed3"
+                app:layout_constraintTop_toBottomOf="@id/ivZedd" />
+
+            <ImageView
+                android:id="@+id/ivComment3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_ig_comment"
+                app:layout_constraintBottom_toBottomOf="@id/ivLove3"
+                app:layout_constraintStart_toEndOf="@id/ivLove3" />
+
+            <ImageView
+                android:id="@+id/ivSend3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_send"
+                app:layout_constraintBottom_toBottomOf="@id/ivComment3"
+                app:layout_constraintStart_toEndOf="@id/ivComment3" />
+
+
+            <ImageView
+                android:id="@+id/ivMark3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_mark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivZedd" />
+
+            <TextView
+                android:id="@+id/tvLike3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-light"
+                android:text="544,793 likes"
+                android:textColor="#000"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/ivLove3"
+                app:layout_constraintTop_toBottomOf="@id/ivLove3" />
+
+            <TextView
+                android:id="@+id/tvName3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="zedd"
+                android:textColor="#000"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/tvLike3"
+                app:layout_constraintTop_toBottomOf="@id/tvLike3" />
+
+            <TextView
+                android:id="@+id/tvInComment3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Headed home"
+                android:textColor="#000"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@id/tvName3"
+                app:layout_constraintStart_toEndOf="@id/tvName3" />
+
+            <TextView
+                android:id="@+id/tvViewComment3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View all 2,344 comments"
+                android:textColor="#A8A7A7"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="@id/tvName3"
+                app:layout_constraintTop_toBottomOf="@id/tvName3" />
+
+            <ImageView
+                android:id="@+id/ivCommentIcon3"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="2dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/oppa"
+                app:layout_constraintStart_toStartOf="@id/tvViewComment3"
+                app:layout_constraintTop_toBottomOf="@id/tvViewComment3" />
+
+            <TextView
+                android:id="@+id/tvAddComment3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Add to comment..."
+                android:textColor="#A8A7A7"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@id/ivCommentIcon3"
+                app:layout_constraintStart_toEndOf="@id/ivCommentIcon3" />
+
+            <TextView
+                android:id="@+id/tvHours3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="10 hours ago"
+                android:textColor="#A8A7A7"
+                android:textSize="9sp"
+                app:layout_constraintStart_toStartOf="@id/ivCommentIcon3"
+                app:layout_constraintTop_toBottomOf="@id/ivCommentIcon3" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
 
-    <!--    End line-->
+    <View
+        android:id="@+id/vMenu"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gHor4"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gHor4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.94" />
 
 
 
+    <ImageView
+        android:id="@+id/ig_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ig_lup"
+        app:layout_constraintTop_toBottomOf="@id/gHor4"/>
 
+    <ImageView
+        android:id="@+id/ig_lup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_lup"
+        app:layout_constraintBottom_toBottomOf="ig_home"
+        app:layout_constraintStart_toEndOf="@id/ig_home"
+        app:layout_constraintEnd_toStartOf="@id/ig_add"
+        app:layout_constraintTop_toTopOf="@id/ig_home"/>
 
+    <ImageView
+        android:id="@+id/ig_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_ig_add"
+        app:layout_constraintBottom_toBottomOf="@id/ig_lup"
+        app:layout_constraintStart_toEndOf="@id/ig_lup"
+        app:layout_constraintEnd_toStartOf="@id/ig_menu_love"
+        app:layout_constraintTop_toTopOf="@id/ig_lup"/>
 
+    <ImageView
+        android:id="@+id/ig_menu_love"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_love"
+        app:layout_constraintBottom_toBottomOf="@id/ig_add"
+        app:layout_constraintStart_toEndOf="@id/ig_add"
+        app:layout_constraintEnd_toStartOf="@id/menu_profile"
+        app:layout_constraintTop_toTopOf="@id/ig_add"/>
 
-<!--end Guideline-->
+    <ImageView
+        android:id="@+id/menu_profile"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/oppa"
+        app:layout_constraintBottom_toBottomOf="@id/ig_menu_love"
+        app:layout_constraintStart_toEndOf="@id/ig_menu_love"
+        app:layout_constraintTop_toTopOf="@id/ig_menu_love"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

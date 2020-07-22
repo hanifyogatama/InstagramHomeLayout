@@ -57,6 +57,11 @@ class MainActivity : AppCompatActivity() {
             .circleCrop()
             .into(ivFeed2)
 
+        Glide.with(this)
+            .load(R.drawable.zedd)
+            .circleCrop()
+            .into(ivFeed3)
+
          // comment icon
         Glide.with(this)
             .load(R.drawable.oppa)
@@ -68,7 +73,11 @@ class MainActivity : AppCompatActivity() {
             .circleCrop()
             .into(ivCommentIcon2)
 
-
+        // menu bawah
+        Glide.with(this)
+            .load(R.drawable.oppa)
+            .circleCrop()
+            .into(menu_profile)
 
     }
 }
