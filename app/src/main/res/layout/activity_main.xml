@@ -59,16 +59,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.20109439" />
+        app:layout_constraintGuide_percent="0.20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gHor3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.80" />
 
 
 <!--End Guideline-->
 
 
 <!--Scroll horizontal-->
+    <!-- End Scroll Horizontal -->
+
+<!--Line-->
     <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="39dp">
 
         <!--Story IG-->
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -94,8 +107,8 @@
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:layout_marginStart="15dp"
-                android:src="@drawable/oppa"
                 android:scaleType="centerCrop"
+                android:src="@drawable/oppa"
                 app:layout_constraintEnd_toStartOf="@id/ivStory2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@id/gHor2" />
@@ -106,10 +119,8 @@
                 android:src="@drawable/ic_baseline_add_circle_24"
                 app:layout_constraintBottom_toBottomOf="@id/ivStory1"
                 app:layout_constraintEnd_toEndOf="@id/ivStory1"
-                app:layout_constraintTop_toBottomOf="@id/ivStory1"
                 app:layout_constraintStart_toEndOf="@id/ivStory1"
-
-                />
+                app:layout_constraintTop_toBottomOf="@id/ivStory1" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -117,19 +128,19 @@
                 android:text="Your Story"
                 android:textColor="#000"
                 android:textSize="11sp"
-                app:layout_constraintTop_toBottomOf="@id/ivStory1"
                 app:layout_constraintEnd_toEndOf="@id/ivStory1"
-                app:layout_constraintStart_toStartOf="@id/ivStory1" />
+                app:layout_constraintStart_toStartOf="@id/ivStory1"
+                app:layout_constraintTop_toBottomOf="@id/ivStory1" />
 
             <ImageView
                 android:id="@+id/ivStory2"
-                android:layout_marginStart="15dp"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
+                android:layout_marginStart="15dp"
                 android:src="@drawable/jakarta"
                 app:layout_constraintBottom_toBottomOf="@id/ivStory1"
-                app:layout_constraintStart_toEndOf="@id/ivStory1"
                 app:layout_constraintEnd_toStartOf="@id/ivStory3"
+                app:layout_constraintStart_toEndOf="@id/ivStory1"
                 app:layout_constraintTop_toTopOf="@id/ivStory1" />
 
             <TextView
@@ -138,16 +149,16 @@
                 android:text="Zara Larsson"
                 android:textColor="#000"
                 android:textSize="11sp"
-                app:layout_constraintTop_toBottomOf="@id/ivStory2"
                 app:layout_constraintEnd_toEndOf="@id/ivStory2"
-                app:layout_constraintStart_toStartOf="@id/ivStory2" />
+                app:layout_constraintStart_toStartOf="@id/ivStory2"
+                app:layout_constraintTop_toBottomOf="@id/ivStory2" />
 
             <ImageView
                 android:id="@+id/ivStory3"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:layout_marginStart="15dp"
-                android:src="@drawable/jakarta"
+                android:src="@drawable/martin_garrix"
                 app:layout_constraintBottom_toBottomOf="@id/ivStory2"
                 app:layout_constraintEnd_toStartOf="@id/ivStory4"
                 app:layout_constraintStart_toEndOf="@id/ivStory2"
@@ -157,12 +168,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Martin Garrix"
+                android:text="martingarrix"
                 android:textColor="#000"
                 android:textSize="11sp"
-                app:layout_constraintTop_toBottomOf="@id/ivStory3"
                 app:layout_constraintEnd_toEndOf="@id/ivStory3"
-                app:layout_constraintStart_toStartOf="@id/ivStory3" />
+                app:layout_constraintStart_toStartOf="@id/ivStory3"
+                app:layout_constraintTop_toBottomOf="@id/ivStory3" />
 
             <ImageView
                 android:id="@+id/ivStory4"
@@ -181,21 +192,21 @@
                 android:text="Dua Lipa"
                 android:textColor="#000"
                 android:textSize="11sp"
-                app:layout_constraintTop_toBottomOf="@id/ivStory4"
                 app:layout_constraintEnd_toEndOf="@id/ivStory4"
-                app:layout_constraintStart_toStartOf="@id/ivStory4" />
+                app:layout_constraintStart_toStartOf="@id/ivStory4"
+                app:layout_constraintTop_toBottomOf="@id/ivStory4" />
 
 
             <ImageView
                 android:id="@+id/ivStory5"
-                android:layout_marginStart="15dp"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
+                android:layout_marginStart="15dp"
                 android:src="@drawable/jakarta"
                 app:layout_constraintBottom_toBottomOf="@id/ivStory4"
+                app:layout_constraintEnd_toEndOf="@id/ivStory6"
                 app:layout_constraintStart_toEndOf="@id/ivStory4"
-                app:layout_constraintTop_toTopOf="@id/ivStory4"
-                app:layout_constraintEnd_toEndOf="@id/ivStory6"/>
+                app:layout_constraintTop_toTopOf="@id/ivStory4" />
 
 
             <TextView
@@ -204,19 +215,19 @@
                 android:text="Chelsea Fc"
                 android:textColor="#000"
                 android:textSize="11sp"
-                app:layout_constraintTop_toBottomOf="@id/ivStory5"
                 app:layout_constraintEnd_toEndOf="@id/ivStory5"
-                app:layout_constraintStart_toStartOf="@id/ivStory5" />
+                app:layout_constraintStart_toStartOf="@id/ivStory5"
+                app:layout_constraintTop_toBottomOf="@id/ivStory5" />
 
             <ImageView
-            android:id="@+id/ivStory6"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:layout_marginStart="15dp"
-            android:src="@drawable/jakarta"
-            app:layout_constraintBottom_toBottomOf="@id/ivStory5"
-            app:layout_constraintStart_toEndOf="@id/ivStory5"
-            app:layout_constraintTop_toTopOf="@id/ivStory5"/>
+                android:id="@+id/ivStory6"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/jakarta"
+                app:layout_constraintBottom_toBottomOf="@id/ivStory5"
+                app:layout_constraintStart_toEndOf="@id/ivStory5"
+                app:layout_constraintTop_toTopOf="@id/ivStory5" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -224,9 +235,9 @@
                 android:text="Agent of Shield"
                 android:textColor="#000"
                 android:textSize="11sp"
-                app:layout_constraintTop_toBottomOf="@id/ivStory6"
                 app:layout_constraintEnd_toEndOf="@id/ivStory6"
-                app:layout_constraintStart_toStartOf="@id/ivStory6" />
+                app:layout_constraintStart_toStartOf="@id/ivStory6"
+                app:layout_constraintTop_toBottomOf="@id/ivStory6" />
 
             <ImageView
                 android:id="@+id/ivStory7"
@@ -236,7 +247,7 @@
                 android:src="@drawable/jakarta"
                 app:layout_constraintBottom_toBottomOf="@id/ivStory6"
                 app:layout_constraintStart_toEndOf="@id/ivStory6"
-                app:layout_constraintTop_toTopOf="@id/ivStory6"/>
+                app:layout_constraintTop_toTopOf="@id/ivStory6" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -244,13 +255,13 @@
                 android:text="Zedd"
                 android:textColor="#000"
                 android:textSize="11sp"
-                app:layout_constraintTop_toBottomOf="@id/ivStory7"
                 app:layout_constraintEnd_toEndOf="@id/ivStory7"
-                app:layout_constraintStart_toStartOf="@id/ivStory7" />
+                app:layout_constraintStart_toStartOf="@id/ivStory7"
+                app:layout_constraintTop_toBottomOf="@id/ivStory7" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </HorizontalScrollView>
-    <!-- End Scroll Horizontal -->
+
     <View
         android:id="@+id/vGaris1"
         android:layout_width="match_parent"
@@ -279,21 +290,123 @@
         android:layout_marginTop="55dp"
         app:layout_constraintTop_toBottomOf="@id/vGaris2"
         app:layout_constraintStart_toStartOf="@id/vGaris2"
-        app:layout_constraintEnd_toEndOf="@id/vGaris2"
-        />
+        app:layout_constraintEnd_toEndOf="@id/vGaris2" />
+
+<!--    End line-->
 
     <ImageView
         android:id="@+id/ivFeed1"
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_marginStart="15dp"
-        android:src="@drawable/oppa"
+        android:src="@drawable/martin_garrix"
         android:scaleType="centerCrop"
         app:layout_constraintTop_toBottomOf="@id/vGaris2"
         app:layout_constraintStart_toStartOf="@id/vGaris2"
-        app:layout_constraintBottom_toTopOf="@id/vGaris3"
-        />
+        app:layout_constraintBottom_toTopOf="@id/vGaris3" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="martingarrix"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@id/ivFeed1"
+        app:layout_constraintBottom_toBottomOf="@id/ivFeed1"
+        app:layout_constraintTop_toTopOf="@id/ivFeed1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:src="@drawable/ic_baseline_more_vert_24"
+        app:layout_constraintTop_toBottomOf="@id/vGaris2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/vGaris3"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/feed_martin"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@id/vGaris3"
+        app:layout_constraintBottom_toTopOf="@id/gHor3"
+        app:layout_constraintTop_toTopOf="@id/vGaris3" />
+
+    <ImageView
+        android:id="@+id/ivLove1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_love"
+        app:layout_constraintTop_toBottomOf="@id/gHor3"
+        app:layout_constraintStart_toStartOf="@id/ivFeed1" />
+
+    <ImageView
+        android:id="@+id/ivComment1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/ic_ig_comment"
+        app:layout_constraintStart_toEndOf="@id/ivLove1"
+        app:layout_constraintBottom_toBottomOf="@id/ivLove1" />
+
+    <ImageView
+        android:id="@+id/ivSend1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/ic_send"
+        app:layout_constraintStart_toEndOf="@id/ivComment1"
+        app:layout_constraintBottom_toBottomOf="@id/ivComment1" />
+
+    <ImageView
+        android:id="@+id/ivMark1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/ic_mark"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gHor3" />
+
+    <TextView
+        android:id="@+id/tvLike1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="544,793 likes"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@id/ivLove1"
+        app:layout_constraintTop_toBottomOf="@id/ivLove1" />
+
+    <TextView
+        android:id="@+id/tvName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="martingarrix"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@id/tvLike1"
+        app:layout_constraintTop_toBottomOf="@id/tvLike1" />
+
+    <TextView
+        android:id="@+id/tvInComment1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Headed home"
+        android:textColor="#000"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@id/tvName1"
+        app:layout_constraintBottom_toBottomOf="@id/tvName1" />
 
 
 
