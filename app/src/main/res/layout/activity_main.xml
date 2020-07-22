@@ -56,14 +56,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.2" />
+        app:layout_constraintGuide_percent="0.20109439" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gHor3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.80" />
+        app:layout_constraintGuide_percent="0.80300957" />
 
 
 <!--End Guideline-->
@@ -286,7 +286,7 @@
         android:id="@+id/vGaris3"
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
-        android:background="#000"
+        android:background="#D1D0D0"
         android:layout_marginTop="55dp"
         app:layout_constraintTop_toBottomOf="@id/vGaris2"
         app:layout_constraintStart_toStartOf="@id/vGaris2"
@@ -306,6 +306,8 @@
         app:layout_constraintBottom_toTopOf="@id/vGaris3" />
 
     <TextView
+        android:id="@+id/tvMartin"
+        android:layout_marginBottom="13dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -317,6 +319,17 @@
         app:layout_constraintBottom_toBottomOf="@id/ivFeed1"
         app:layout_constraintStart_toEndOf="@id/ivFeed1"
         app:layout_constraintTop_toTopOf="@id/ivFeed1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="amsterdam"
+        android:textColor="#000"
+        android:textSize="10sp"
+        app:layout_constraintTop_toBottomOf="@id/tvMartin"
+        app:layout_constraintStart_toStartOf="@id/tvMartin"
+        />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -342,6 +355,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:src="@drawable/ic_love"
+
         app:layout_constraintTop_toBottomOf="@id/gHor3"
         app:layout_constraintStart_toStartOf="@id/ivFeed1" />
 
@@ -408,9 +422,18 @@
         android:text=" Headed home"
         android:textColor="#000"
         android:textSize="13sp"
-        android:fontFamily="sans-serif-light"
         app:layout_constraintStart_toEndOf="@id/tvName1"
         app:layout_constraintBottom_toBottomOf="@id/tvName1" />
+
+    <TextView
+        android:id="@+id/tvViewComment1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View all 2,344 comments"
+        android:textColor="#A8A7A7"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@id/tvName1"
+        app:layout_constraintTop_toBottomOf="@id/tvName1" />
 
     <ImageView
         android:id="@+id/ivCommentIcon1"
@@ -418,8 +441,64 @@
         android:layout_height="28dp"
         android:layout_marginTop="2dp"
         android:src="@drawable/oppa"
-        app:layout_constraintTop_toBottomOf="@id/tvName1"
-        app:layout_constraintStart_toStartOf="@id/tvName1"/>
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="@id/tvViewComment1"
+        app:layout_constraintTop_toBottomOf="@id/tvViewComment1"
+        />
+
+    <TextView
+        android:id="@+id/tvAddComment1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to comment..."
+        android:textColor="#A8A7A7"
+        android:textSize="13sp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@id/ivCommentIcon1"
+        app:layout_constraintBottom_toBottomOf="@id/ivCommentIcon1" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/ivThumb"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="130dp"-->
+<!--        android:src="@drawable/ic_baseline_thumb_up_alt_24"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/tvAddComment1"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/ivLove"-->
+<!--        app:layout_constraintStart_toEndOf="@id/tvAddComment1"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/tvAddComment1" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/ivLove"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:src="@drawable/ic_baseline_favorite_16"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/ivThumb"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/ivPlus"-->
+<!--        app:layout_constraintStart_toEndOf="@id/ivThumb"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/ivThumb" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/ivPlus"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/ic_baseline_add_circle_outline_16"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/ivLove"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@id/ivLove"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/ivLove" />-->
+
+    <TextView
+        android:id="@+id/tvHours1"
+        android:layout_marginTop="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12 hours ago"
+        android:textColor="#A8A7A7"
+        android:textSize="9sp"
+        app:layout_constraintStart_toStartOf="@id/ivCommentIcon1"
+        app:layout_constraintTop_toBottomOf="@id/ivCommentIcon1" />
 
 
 <!--end Guideline-->
