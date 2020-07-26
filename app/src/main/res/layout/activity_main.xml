@@ -10,10 +10,11 @@
     <View
         android:id="@+id/vInstagram"
         android:layout_width="0dp"
-        android:layout_height="45dp"
+        android:layout_height="0dp"
         android:background="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/gHor33"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -45,8 +46,7 @@
         android:src="@drawable/ic_camera"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/vInstagram"
-        />
+        app:layout_constraintBottom_toBottomOf="@id/vInstagram" />
 
     <View
         android:id="@+id/vGaris1"
@@ -61,34 +61,19 @@
 <!--End App bar-->
 
 <!--Guideline -->
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gHor33"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.06" />
-
-
+        app:layout_constraintGuide_percent="0.07" />
 
 <!--End Guideline-->
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!--Scroll vertical-->
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="@id/gHor4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -103,8 +88,9 @@
             <!--Scroll horizontal-->
             <HorizontalScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:layout_marginTop="16dp"
+                android:scrollbars="none"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <!--Story IG-->
@@ -124,7 +110,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        app:layout_constraintGuide_percent="0.35" />
+                        app:layout_constraintGuide_percent="0.0" />
 
                     <ImageView
                         android:id="@+id/ivStory1"
@@ -138,13 +124,13 @@
                         app:layout_constraintTop_toTopOf="@id/gHor2" />
 
                     <ImageView
+                        android:id="@+id/add_story"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
                         android:src="@drawable/ic_baseline_add_circle_24"
-                        app:layout_constraintBottom_toBottomOf="@id/ivStory1"
                         app:layout_constraintEnd_toEndOf="@id/ivStory1"
-                        app:layout_constraintStart_toEndOf="@id/ivStory1"
-                        app:layout_constraintTop_toBottomOf="@id/ivStory1" />
+                        app:layout_constraintBottom_toBottomOf="@id/ivStory1" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -295,14 +281,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_begin="140dp" />
+                app:layout_constraintGuide_begin="103dp" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/gHor12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintGuide_begin="204dp" />
+                app:layout_constraintGuide_begin="165dp" />
 
             <View
                 android:id="@+id/vGaris2"
@@ -411,7 +397,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:fontFamily="sans-serif-light"
-                android:text="544,793 likes"
+                android:text="96,873 likes"
                 android:textColor="#000"
                 android:textSize="13sp"
                 android:textStyle="bold"
@@ -422,23 +408,11 @@
                 android:id="@+id/tvName1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-light"
-                android:text="martingarrix"
+                android:text="caption"
                 android:textColor="#000"
                 android:textSize="13sp"
-                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@id/tvLike1"
                 app:layout_constraintTop_toBottomOf="@id/tvLike1" />
-
-            <TextView
-                android:id="@+id/tvInComment1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=" Headed home"
-                android:textColor="#000"
-                android:textSize="13sp"
-                app:layout_constraintBottom_toBottomOf="@id/tvName1"
-                app:layout_constraintStart_toEndOf="@id/tvName1" />
 
             <TextView
                 android:id="@+id/tvViewComment1"
@@ -495,16 +469,6 @@
                 app:layout_constraintStart_toStartOf="@id/tvHours1"
                 app:layout_constraintTop_toBottomOf="@id/tvHours1" />
 
-
-
-<!--            <androidx.constraintlayout.widget.Guideline-->
-<!--                android:id="@+id/gHor13"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:orientation="horizontal"-->
-<!--                app:layout_constraintGuide_begin="1500dp" />-->
-
-
             <TextView
                 android:id="@+id/tvAgentOfShiled"
                 android:layout_width="wrap_content"
@@ -537,8 +501,9 @@
                 android:src="@drawable/ic_baseline_more_vert_24"
                 app:layout_constraintBottom_toTopOf="@id/ivAgentOfShield"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.502"
-                app:layout_constraintStart_toEndOf="@id/tvAgentOfShiled" />
+                app:layout_constraintTop_toTopOf="@id/ivFeed2"
+                app:layout_constraintBottom_toBottomOf="@id/ivFeed2"
+                />
 
             <ImageView
                 android:id="@+id/ivAgentOfShield"
@@ -546,7 +511,7 @@
                 android:layout_height="385dp"
                 android:layout_marginTop="8dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/feed_martin"
+                android:src="@drawable/agent"
                 app:layout_constraintStart_toStartOf="@id/ivFeed2"
                 app:layout_constraintTop_toBottomOf="@id/ivFeed2" />
 
@@ -712,9 +677,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="7dp"
                 android:src="@drawable/ic_baseline_more_vert_24"
-                app:layout_constraintBottom_toTopOf="@id/ivZedd"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/tvZedd" />
+                app:layout_constraintTop_toTopOf="@id/ivFeed3"
+                app:layout_constraintBottom_toBottomOf="@id/ivFeed3" />
 
             <ImageView
                 android:id="@+id/ivZedd"
@@ -722,7 +687,7 @@
                 android:layout_height="385dp"
                 android:layout_marginTop="8dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/feed_martin"
+                android:src="@drawable/img_zedd"
                 app:layout_constraintStart_toStartOf="@id/ivFeed3"
                 app:layout_constraintTop_toBottomOf="@id/ivFeed3" />
 
@@ -796,7 +761,7 @@
                 android:id="@+id/tvInComment3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" Headed home"
+                android:text=" No Photos!"
                 android:textColor="#000"
                 android:textSize="13sp"
                 app:layout_constraintBottom_toBottomOf="@id/tvName3"
@@ -882,7 +847,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_lup"
-        app:layout_constraintBottom_toBottomOf="ig_home"
+        app:layout_constraintBottom_toBottomOf="@id/ig_home"
         app:layout_constraintStart_toEndOf="@id/ig_home"
         app:layout_constraintEnd_toStartOf="@id/ig_add"
         app:layout_constraintTop_toTopOf="@id/ig_home"/>

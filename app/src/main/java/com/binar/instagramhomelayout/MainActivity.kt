@@ -2,19 +2,21 @@ package com.binar.instagramhomelayout
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.SpannableStringBuilder
 import com.bumptech.glide.Glide
+import androidx.core.text.bold
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        this.supportActionBar?.hide()
+        try {
+            this.supportActionBar?.hide()
+        } catch (e: NullPointerException) {
+        }
 
-        Glide.with(this)
-            .load(R.drawable.oppa)
-            .circleCrop()
-            .into(ivStory1)
+        Glide.with(this).load(R.drawable.oppa).circleCrop().into(ivStory1)
 
         Glide.with(this)
             .load(R.drawable.zara_larsson)
@@ -73,11 +75,23 @@ class MainActivity : AppCompatActivity() {
             .circleCrop()
             .into(ivCommentIcon2)
 
+        Glide.with(this)
+            .load(R.drawable.oppa)
+            .circleCrop()
+            .into(ivCommentIcon3)
+
         // menu bawah
         Glide.with(this)
             .load(R.drawable.oppa)
             .circleCrop()
             .into(menu_profile)
+
+        // caption
+            val caption1= SpannableStringBuilder()
+                .bold {append("martingarrix ")}
+                .append("Headed home")
+            tvName1.setText(caption1)
+
 
     }
 }
